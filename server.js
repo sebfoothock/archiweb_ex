@@ -29,6 +29,7 @@ app.get('/index/:name', (request, response) => {
 app.use(express.static('public'));
 
 
+//launch server
 app.listen(3000, function () {
     console.log("server is running on port 3000");
 })
