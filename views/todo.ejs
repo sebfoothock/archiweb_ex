@@ -1,0 +1,16 @@
+<h1>Todo</h1>
+<ul>
+    <% for(var i =0; i< todo.length; i++){ %>
+        <li>
+            <% = todo[i] %>
+            <a href="/todo/<% =i %> ">Delete</a> 
+        </li>
+    <% } %> 
+</ul>
+
+<p><% = message %> </p>
+
+<form action="/todo">
+    <input type="text" name="todoLabel"/>
+    <input type="submit" name="save" value="Sauver"/>
+</form>
