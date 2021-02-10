@@ -2,14 +2,10 @@ let express = require('express');
 
 let app = express();
 
-var todo = ["Faire les courses", "Nourir le chat"];
-
-var message = '';
-
 //permettre de décomposer le corps du texte en variable
 app.use(express.urlencoded());
 
-//route todo.ejs
+/* //route todo.ejs
 app.get('/todo', function (request, response) {
     response.render('todo.ejs', {listTodo : todo, msg: message})
 })
@@ -29,7 +25,10 @@ app.post('/todo/remove', function (request, response) {
     console.log(todo);
     message = "Suppression réussi";
     response.redirect('/todo');
-})
+}) */
+
+let routes = require('./mesroutes');
+app.use('/',routes);
 
 //launch server
 app.listen(3000, function () {
