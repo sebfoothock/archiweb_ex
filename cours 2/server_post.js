@@ -4,7 +4,7 @@ let express = require('express');
 //initialize the app
 let app = express();
 
-//permettre de décomposer le corps du texte en variable
+//permettre de décomposer le corps du texte en variable (remplace les éléments dans l'URL du GET)
 app.use(express.urlencoded());
 
 /* //send message for default URL
