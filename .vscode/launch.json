@@ -6,13 +6,17 @@
     "configurations": [
 
         {
+            "type": "node",
+            "request": "attach",
             "name": "Attach by Process ID",
             "processId": "${command:PickProcess}",
-            "request": "attach",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "type": "pwa-node"
+            "protocol": "inspector",
+            "address": "localhost",
+            "port": 8080,
+            "restart": true,
+            "preLaunchTask": "npm: build",
+            "sourceMaps": true,
+            "outFiles" : [ "${workspaceRoot}/**/*.js" ]
         },
         {
             "type": "node",
@@ -20,7 +24,7 @@
             "name": "Launch Program",
             "skipFiles": [
             ],
-            "program": "${workspaceFolder}\\cours 3\\server.js"
+            "program": "${workspaceFolder}\\cours 4 sql\\server.js"
         }
     ]
 }

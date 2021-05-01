@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="Présentation de mon stage et d'Infrabel (pour qui je travaille) ">
+
+    
+    <title>Stage Infrabel</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <a href="https://infrabel.be/fr"><img src="img/logo.png" alt="logo Infrabel"></a>
+        </div>
+        <div class="navbar">
+
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="#stage" onclick="Hide()">Stage</a></li>
+                <li><a href="#infrabel" onclick="Hide()">Infrabel</a></li>
+                <li><a href="#contact" onclick="Hide()">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="body">
+            <section id="accueil">
+
+            </section>
+            <section id="stage">
+                <img class="imgBody" src="img/infrabel.jpg" alt="ouvrier Infrabel">
+                <h1 class="title">Mon stage</h1>
+                <p>Mon stage de Business Analyst se déroule dans l’équipe I-ICT.501 « Data Office » située dans les
+                    locaux
+                    ICT près de la gare du midi. Ce bâtiment compte 1400 employés et a été récemment construit. </p>
+
+                <p>Mon équipe est composée de 7 employés ou consultants qui sont chargés de la bonne gouvernance des
+                    données
+                    au sein d’Infrabel. Cary Bernadette est la manager de l’équipe et ma maître de stage.
+                    Frédéric Zur Nedden va me guider dans mes projets et a un rôle de business analyst au sein de
+                    l’équipe.
+                </p>
+
+                <h4>Le service Data Office est chargé de :</h4>
+
+                <ul>
+                    <li>Documenter les données</li>
+                    <li>Retrouver la source des données</li>
+                    <li>Vérifier la qualité des données</li>
+                    <li>Trouver les responsables et les encodeurs des données</li>
+                    <li>Assurer la sécurité des données</li>
+                </ul>
+            </section>
+            <section id="infrabel">
+                <h1>Infrabel</h1>
+                <p>Aujourd’hui, Infrabel représentent 11 000 employés qui travaillent pour le bon fonctionnement, la
+                    sécurité, l’entretien et la modernisation du réseau ferroviaire belge. </p>
+
+                <h4>Vision de l’entreprise</h4>
+                <p>Les valeurs d’Infrabel sont l’esprit d’équipe pour créer une collaboration et un respect au travail,
+                    la
+                    passion du métier et le besoin de répondre aux demandes de nos clients (directs ou indirects).</p>
+                <p>Les priorités sont : </p>
+                <ul>
+                    <li>La sécurité des voyageurs et des collaborateurs sur le terrain</li>
+                    <li>Mettre l’accent sur la ponctualité</li>
+                    <li>Un réseau pour des trains de demain</li>
+                    <li>Mobility as a Service</li>
+                    <li>Opérer des choix économiques</li>
+                    <li>Entreprendre durablement</li>
+                </ul>
+
+                <h4>Les départements de l'entreprise</h4>
+
+                <img class="imgBody" src="img/departement.jpg" alt="départements Infrabel">
+            </section>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <section>
+            <h2 class="white">Contact</h2>
+            <form action="mailto:sebastien.raemdonck@student.ichec.be">
+                <input type="submit" id="btnMail" name="mail" value="adressen mail">
+            </form>
+        </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
